@@ -14,7 +14,9 @@ class MvcController {
     
     function __construct() {
 
-        session_start();
+        if(session_id() == '') {
+            session_start();
+        }
         $this->set_meta();
         $this->file_includer = new MvcFileIncluder();
     
