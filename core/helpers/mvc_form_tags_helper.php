@@ -218,6 +218,11 @@ class MvcFormTagsHelper extends MvcHelper {
     static private function input_name($field_name) {
         return $field_name;
     }
+    
+    static public function sort_row($field_name)
+    {
+        
+    }
 
 }
 
